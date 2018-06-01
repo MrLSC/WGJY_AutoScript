@@ -16,6 +16,10 @@ function se.task()
 	timeGift.findBox()
 	--自动VIP任务
 	lm.vipTask()
+	--自动联盟
+	lm.lmTask()
+	--自动内政
+	lm.nzTask()
 end
 
 ex_time = 60

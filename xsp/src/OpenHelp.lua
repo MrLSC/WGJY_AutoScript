@@ -7,7 +7,7 @@ oh = {}
 function openHelpPage()
 	x, y = findColor({0, 0, 719, 1279}, 
 		"0|0|0xdfa58c,-16|-12|0x446d8e,-7|-12|0x6d4b3a,5|3|0xb9815b,-16|15|0x446d8e,24|14|0x3e68a1,23|-6|0x3e689c,5|4|0x92613d",
-		85, 0, 0, 0)
+		90, 0, 0, 0)
 	if x > -1 then
 		touch.touch(x,y)
 		mSleep(1000)

@@ -2,6 +2,7 @@ local openGift = require("OpenGift")
 local findHome = require("FindHome")
 local openHelp = require("OpenHelp")
 local timeGift = require("TimeGift")
+local lm = require("LianMengTask")
 local sh = require("ShowHUD")
 
 se={}
@@ -13,6 +14,8 @@ function se.task()
 	openHelp.help()
 	--自动领取倒计时礼包
 	timeGift.findBox()
+	--自动VIP任务
+	lm.vipTask()
 end
 
 ex_time = 60

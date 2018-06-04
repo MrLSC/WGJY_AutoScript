@@ -1,6 +1,7 @@
 local sh = require("ShowHUD")
 local se = require("Start_Ex")
 local touch = require("Touch")
+local fo = require("ore/findOre")
 
 while (true)
 do
@@ -15,7 +16,9 @@ init("com.igg.android.lordsmobile_cn",0)
 ret,results = showUI('ui.json')
 
 --用户点击确定就开始执行  取消就结束
-if ret == 1 then se.start_ex() else lua_exit() end
+if ret == 1 then se.start_ex(results) else lua_exit() end
+
+--fo.start_gether(2,"木")
 
 --touch.move(100,"左")
 

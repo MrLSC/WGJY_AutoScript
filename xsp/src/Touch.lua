@@ -45,17 +45,17 @@ function t.move(dist,orientation)
 	local endY = 0
 	mSleep(50)
 	if orientation == "上" then 
-		endX = touchX + dist
+		endX = touchX - dist
 		endY = touchY
 	elseif orientation == "下" then
-		endX = touchX - dist
+		endX = touchX + dist
 		endY = touchY
 	elseif orientation == "左" then
 		endX = touchX
-		endY = touchY - dist
+		endY = touchY + dist
 	elseif orientation == "右" then
 		endX = touchX
-		endY = touchY + dist
+		endY = touchY - dist
 	end
 	swip(touchX,touchY,endX,endY)
 end

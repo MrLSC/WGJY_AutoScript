@@ -1,8 +1,8 @@
 {
    "style" : "default",
    "config" : "save_王国纪元.dat",
-   "width" : 400,
-   "height" : 300,
+   "width" : 450,
+   "height" : 400,
    "cancelscroll" : true,
    "countdown" : 0,
    "cancelname" : "取消",
@@ -18,11 +18,30 @@
       },
       {
          "align" : "center",
-         "color" : "0,0,0",
-         "size" : "20",
-         "text" : "请在游戏主界面运行脚本,点击确定开始执行\n自动开箱、自动帮助、倒计时礼包",
-         "bg" : "255,255,255",
-         "type" : "Label"
+         "id" : "cbg_1",
+         "list" : "自动开启联盟礼物,自动帮助,自动领倒计时礼包,自动VIP任务,自动联盟任务,自动内政任务,自动采集",
+         "select" : "0@1@2@3@4@5@6",
+         "size" : "15",
+         "type" : "CheckBoxGroup",
+         "orientation" : "horizontal",
+         "color" : "0,0,225"
+      },
+	  {
+	      "align" : "center",
+	      "color" : "0,0,0",
+	      "size" : "20",
+	      "text" : "自动采集勾选启用,4资源只能选其一",
+	      "bg" : "255,255,255",
+	      "type" : "Label"
+      },
+	  {
+	      "id" : "cj_1",
+	      "list" : "石矿,木材,铁矿,金币",
+	      "select" : "0",
+	      "size" : "15",
+	      "type" : "RadioGroup",
+	      "orientation" : "horizontal",
+	      "color" : "0,0,225"
       }
    ]
 }

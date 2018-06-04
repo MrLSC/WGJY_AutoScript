@@ -9,4 +9,13 @@ function sys.sysLogLst(...)
 	sysLog(msg)
 end
 
+function sys.contains(str,find)  --Returns true if @str contains @find
+    if not str then return nil end
+    str = tostring(str)
+  for n=1, #str-#find+1 do
+    if str:sub(n,n+#find-1) == find then return true end
+  end
+  return false
+end
+
 return sys

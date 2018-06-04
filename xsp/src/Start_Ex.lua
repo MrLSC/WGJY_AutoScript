@@ -40,13 +40,13 @@ function se.task(results)
 	--自动采集
 	if sys.contains(results.cbg_1,"6") then
 		local t = "石"
-		if results.cj_1 == 0 then
+		if results.cj_1 == "0" then
 			t = "石"
-		elseif results.cj_1 == 1 then
+		elseif results.cj_1 == "1" then
 			t = "木"
-		elseif results.cj_1 == 2 then
+		elseif results.cj_1 == "2" then
 			t = "铁"
-		elseif results.cj_1 == 3 then
+		elseif results.cj_1 == "3" then
 			t = "金"
 		end
 		gr.ready(t)

@@ -2,14 +2,26 @@ local touch = require("Touch")
 local k = require("ore/Kuang")
 local findHome = require("FindHome")
 
---隐藏地图其他按钮(或打开地图其他按钮)
-function zk_gb()
+--隐藏地图其他按钮
+function gb()
 	x, y = findColor({0, 0, 719, 1279}, 
 		"0|0|0x2c5e6c,-14|-14|0xf8c061,15|-13|0xe5a23d,16|17|0xebb94d,-14|16|0xf8cf5b,-18|2|0x276171,21|2|0x276171,0|-20|0x3e7182,1|18|0x335058",
 		80, 0, 0, 0)
 	if x > -1 then
 		touch.touch(x,y)
 	end
+	return x
+end
+
+--打开地图其他按钮
+function zk()
+	x, y = findColor({0, 0, 719, 1279}, 
+		"0|0|0x2a5d6e,-20|-11|0x266070,-11|-19|0x2c5e66,11|-17|0x375c66,20|-12|0x384132,20|12|0x2d5667,13|21|0x344b4e,-13|21|0x5c3c0c,-18|12|0x2b5c6d,-9|12|0xfdcd61,10|12|0xe5ad42,9|-8|0xdea045,-6|-6|0xeaaf49",
+		80, 0, 0, 0)
+	if x > -1 then
+		touch.touch(x,y)
+	end
+	return x
 end
 
 --采集按钮
@@ -62,6 +74,7 @@ function ex_gether(x1,y1)
 		80, 0, 0, 0)
 	if x > -1 then
 		touch.touch(x,y)
+		mSleep(2000)
 		sysLog("执行采集")
 		bingxian = bingxian + 1
 	end
@@ -117,7 +130,6 @@ function lookUp(bx,index,t)
 	end
 	
 	local i = index * 2
-	mSleep(2000)
 	touch.move(720,"上")
 	mSleep(500)
 	
@@ -131,7 +143,7 @@ function lookUp(bx,index,t)
 	
 	for tmpi=1,i-1 do
 		touch.move(1280,"右")
-		mSleep(2000)
+		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
 			ex_gether(x,y)
@@ -142,7 +154,7 @@ function lookUp(bx,index,t)
 	end
 	for tmpi=1,i do
 		touch.move(720,"下")
-		mSleep(2000)
+		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
 			ex_gether(x,y)
@@ -153,7 +165,7 @@ function lookUp(bx,index,t)
 	end
 	for tmpi=1,i do
 		touch.move(1280,"左")
-		mSleep(2000)
+		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
 			ex_gether(x,y)
@@ -164,7 +176,7 @@ function lookUp(bx,index,t)
 	end
 	for tmpi=1,i do
 		touch.move(720,"上")
-		mSleep(2000)
+		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
 			ex_gether(x,y)
@@ -177,7 +189,7 @@ end
 
 function fo.start_gether(bx,t)
 	findHome.openMap()
-	zk_gb()
+	gb()
 	mSleep(500)
 	local index = 1
 	while (true) 
@@ -188,7 +200,10 @@ function fo.start_gether(bx,t)
 		end
 		index = index + 1
 	end
-	zk_gb()
+	mSleep(500)
+	sysLog("采集完成")
+	x2 = zk()
+	sysLog(x2)
 end
 
 return fo

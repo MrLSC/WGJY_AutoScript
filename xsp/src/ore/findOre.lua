@@ -1,6 +1,7 @@
 local touch = require("Touch")
 local k = require("ore/Kuang")
 local findHome = require("FindHome")
+local sh = require("ShowHUD")
 
 --隐藏地图其他按钮
 function gb()
@@ -128,9 +129,9 @@ function lookUp(bx,index,t)
 			return -1
 		end
 	end
-	
+	local width,height = getScreenSize()
 	local i = index * 2
-	touch.move(720,"上")
+	touch.move(width,"上")
 	mSleep(500)
 	
 	x,y = findOre(t)
@@ -142,7 +143,7 @@ function lookUp(bx,index,t)
 	end
 	
 	for tmpi=1,i-1 do
-		touch.move(1280,"右")
+		touch.move(height,"右")
 		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
@@ -153,7 +154,7 @@ function lookUp(bx,index,t)
 		end
 	end
 	for tmpi=1,i do
-		touch.move(720,"下")
+		touch.move(width,"下")
 		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
@@ -164,7 +165,7 @@ function lookUp(bx,index,t)
 		end
 	end
 	for tmpi=1,i do
-		touch.move(1280,"左")
+		touch.move(height,"左")
 		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
@@ -175,7 +176,7 @@ function lookUp(bx,index,t)
 		end
 	end
 	for tmpi=1,i do
-		touch.move(720,"上")
+		touch.move(width,"上")
 		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
@@ -185,6 +186,8 @@ function lookUp(bx,index,t)
 			end
 		end
 	end
+	local bx_hud = bx - bingxian
+	sh.show("当前剩余"..bx_hud.."条兵线")
 end
 
 function fo.start_gether(bx,t)

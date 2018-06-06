@@ -75,7 +75,7 @@ function ex_gether(x1,y1)
 		80, 0, 0, 0)
 	if x > -1 then
 		touch.touch(x,y)
-		mSleep(2500)
+		mSleep(3000)
 		fh.backToFirstPage()
 		bingxian = bingxian + 1
 	end

@@ -16,6 +16,16 @@
          "bg" : "255,255,255",
          "type" : "Label"
       },
+	  {
+	      "id" : "Edit_time",
+	      "align" : "left",
+	      "color" : "0,0,0",
+	      "kbtype" : "number",
+	      "prompt" : "请输入脚本执行间隔(秒)",
+	      "size" : "25",
+	      "text" : "60",
+	      "type" : "Edit"
+      },
       {
          "align" : "center",
          "id" : "cbg_1",

@@ -25,9 +25,9 @@ endY	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	55;"	e
 endY	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	58;"	e
 ex_gether	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	64;"	f
 ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	60;"	e
-ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	79;"	e
 ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	81;"	e
-ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	84;"	e
+ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	83;"	e
+ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	86;"	e
 fh	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\FindHome.lua	3;"	e
 fh.backToFirstPage	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\FindHome.lua	46;"	f
 fh.findCastleBtn	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\FindHome.lua	14;"	f
@@ -181,6 +181,7 @@ touch(x,y)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	5;"	f
 touchX	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	42;"	e
 touchY	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	43;"	e
 user_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	58;"	e
+user_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	63;"	e
 vipTask()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\LianMengTask.lua	49;"	f
 x	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	227;"	e
 zdwc	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\LianMengTask.lua	38;"	f

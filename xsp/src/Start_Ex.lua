@@ -55,10 +55,12 @@ function se.task(results)
 	end
 end
 
-user_time = 10
+user_time = 60
 
 ex_time = user_time
 function se.start_ex(results)
+
+	user_time = results.Edit_time
 	
 	--判断是否支持当前分辨率
 	width,height = getScreenSize()

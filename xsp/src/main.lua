@@ -19,7 +19,7 @@ ret,results = showUI('ui.json')
 if ret == 1 then se.start_ex(results) else lua_exit() end
 
 
---fo.start_gether(2,"木")
+--fo.lookUp_2(1,2,"木")
 
 --touch.move(100,"左")
 

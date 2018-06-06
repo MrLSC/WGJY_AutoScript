@@ -75,8 +75,8 @@ function ex_gether(x1,y1)
 		80, 0, 0, 0)
 	if x > -1 then
 		touch.touch(x,y)
-		mSleep(2000)
-		sysLog("执行采集")
+		mSleep(2500)
+		fh.backToFirstPage()
 		bingxian = bingxian + 1
 	end
 end
@@ -115,17 +115,40 @@ function findOre(t)
 		else
 			return k.jk_3()
 		end
+	elseif t == "水" then
+		return k.sj()
 	end
 	mSleep(200)
 end
 
+function lookUp_2(bx,index,t)
+	local orientations = {"上","右","下","左","上"}
+	local indexs = { 1 , (index * 2) - 1 , index * 2, index * 2, index * 2 }
+	local width,height = getScreenSize()
+	
+	for i,ori in ipairs(orientations) do
+		for tmpi=1,indexs[i] do
+			touch.move(width,orientations[i])
+			mSleep(500)
+			x,y = findOre(t)
+			if x > -1 then
+				ex_gether(x,y)
+				sh.show("当前剩余"..(bx - bingxian).."条兵线")
+				if bingxian >= bx then
+					return -1
+				end
+				return 0
+			end
+		end
+	end
+end
 
 function lookUp(bx,index,t)
 	
 	local x,y = findOre(t)
 	if x > -1 then
 		ex_gether(x,y)
-		if bingxian == bx then
+		if bingxian >= bx then
 			return -1
 		end
 	end
@@ -137,7 +160,7 @@ function lookUp(bx,index,t)
 	x,y = findOre(t)
 	if x > -1 then
 		ex_gether(x,y)
-		if bingxian == bx then
+		if bingxian >= bx then
 			return -1
 		end
 	end
@@ -148,40 +171,43 @@ function lookUp(bx,index,t)
 		x,y = findOre(t)
 		if x > -1 then
 			ex_gether(x,y)
-			if bingxian == bx then
+			if bingxian >= bx then
 				return -1
 			end
 		end
 	end
+	
 	for tmpi=1,i do
 		touch.move(width,"下")
 		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
 			ex_gether(x,y)
-			if bingxian == bx then
+			if bingxian >= bx then
 				return -1
 			end
 		end
 	end
+	
 	for tmpi=1,i do
 		touch.move(height,"左")
 		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
 			ex_gether(x,y)
-			if bingxian == bx then
+			if bingxian >= bx then
 				return -1
 			end
 		end
 	end
+	
 	for tmpi=1,i do
 		touch.move(width,"上")
 		mSleep(500)
 		x,y = findOre(t)
 		if x > -1 then
 			ex_gether(x,y)
-			if bingxian == bx then
+			if bingxian >= bx then
 				return -1
 			end
 		end
@@ -193,20 +219,23 @@ end
 function fo.start_gether(bx,t)
 	findHome.openMap()
 	gb()
+	bingxian = 0
 	mSleep(500)
 	local index = 1
 	while (true) 
 	do
-		x = lookUp(bx,index,t)
+		x = lookUp_2(bx,index,t)
 		if x == -1 then 
 			break
+		elseif x == 0 then
+			index = 1
+		else
+			index = index + 1
 		end
-		index = index + 1
 	end
+	sh.show("采集完成")
 	mSleep(500)
-	sysLog("采集完成")
-	x2 = zk()
-	sysLog(x2)
+	zk()
 end
 
 return fo

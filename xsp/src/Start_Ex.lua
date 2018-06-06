@@ -48,12 +48,16 @@ function se.task(results)
 			t = "铁"
 		elseif results.cj_1 == "3" then
 			t = "金"
+		elseif results.cj_1 == "4" then
+			t = "水"
 		end
 		gr.ready(t)
 	end
 end
 
-ex_time = 60
+user_time = 10
+
+ex_time = user_time
 function se.start_ex(results)
 	
 	--判断是否支持当前分辨率
@@ -69,15 +73,15 @@ function se.start_ex(results)
 	
 	while (true)
 	do
-		if tonumber(ex_time) == 60 then
+		if tonumber(ex_time) == user_time then
 			se.task(results) --开始执行任务
-			sh.show("一分钟后再次执行")
+			sh.show(user_time.."秒后再次执行")
 			ex_time = tonumber(ex_time) -1
 		elseif tonumber(ex_time) > 0 then
 			ex_time = tonumber(ex_time) -1
 			sh.show(string.format("%s%s",ex_time,"秒后再次执行"))
 		else 
-			ex_time = 60
+			ex_time = user_time
 		end
 		mSleep(1000)
 	end

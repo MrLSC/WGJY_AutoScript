@@ -24,10 +24,10 @@ endY	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	52;"	e
 endY	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	55;"	e
 endY	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	58;"	e
 ex_gether	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	64;"	f
-ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	60;"	e
-ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	81;"	e
-ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	83;"	e
-ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	86;"	e
+ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	62;"	e
+ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	80;"	e
+ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	82;"	e
+ex_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	85;"	e
 fh	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\FindHome.lua	3;"	e
 fh.backToFirstPage	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\FindHome.lua	46;"	f
 fh.findCastleBtn	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\FindHome.lua	14;"	f
@@ -131,7 +131,7 @@ orientations	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	
 ready(t)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\GetherReady.lua	42;"	f
 se	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	10;"	e
 se	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\main.lua	2;"	e
-se.start_ex	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	61;"	f
+se.start_ex	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	60;"	f
 se.task	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	12;"	f
 sh	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\LianMengTask.lua	3;"	e
 sh	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\OpenGift.lua	3;"	e
@@ -145,7 +145,7 @@ show(text)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ShowHUD.lua	5;"	f
 sj()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\Kuang.lua	74;"	f
 sk_3()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\Kuang.lua	4;"	f
 sk_4()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\Kuang.lua	12;"	f
-start_ex(results)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	61;"	f
+start_ex(results)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	60;"	f
 start_gether(bx,t)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	219;"	f
 str	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\utils\sys_utils.lua	14;"	e
 swip	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	13;"	f
@@ -181,7 +181,7 @@ touch(x,y)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	5;"	f
 touchX	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	42;"	e
 touchY	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	43;"	e
 user_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	58;"	e
-user_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	63;"	e
+user_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	61;"	e
 vipTask()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\LianMengTask.lua	49;"	f
 x	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	227;"	e
 zdwc	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\LianMengTask.lua	38;"	f

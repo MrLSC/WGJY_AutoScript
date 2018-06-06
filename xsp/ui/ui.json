@@ -22,7 +22,7 @@
 	      "color" : "0,0,0",
 	      "kbtype" : "number",
 	      "prompt" : "请输入脚本执行间隔(秒)",
-	      "size" : "25",
+	      "size" : "15",
 	      "text" : "60",
 	      "type" : "Edit"
       },

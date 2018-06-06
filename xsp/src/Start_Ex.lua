@@ -57,10 +57,9 @@ end
 
 user_time = 60
 
-ex_time = user_time
 function se.start_ex(results)
-
 	user_time = results.Edit_time
+	ex_time = user_time
 	
 	--判断是否支持当前分辨率
 	width,height = getScreenSize()
@@ -75,13 +74,13 @@ function se.start_ex(results)
 	
 	while (true)
 	do
-		if tonumber(ex_time) == user_time then
+		if ex_time == user_time then
 			se.task(results) --开始执行任务
 			sh.show(user_time.."秒后再次执行")
-			ex_time = tonumber(ex_time) -1
-		elseif tonumber(ex_time) > 0 then
-			ex_time = tonumber(ex_time) -1
-			sh.show(string.format("%s%s",ex_time,"秒后再次执行"))
+			ex_time = ex_time -1
+		elseif ex_time > 0 then
+			ex_time = ex_time -1
+			sh.show(ex_time.."秒后再次执行")
 		else 
 			ex_time = user_time
 		end

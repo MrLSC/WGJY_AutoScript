@@ -160,9 +160,13 @@ function lookUp(bx,index,t)
 		for tmpi=1,indexs[i] do
 			touch.move(width,orientations[i])
 			mSleep(500)
-			return fzk(t,bx)
+			local task_type = fzk(t,bx)
+			if task_type ~= 1 then
+				return task_type
+			end
 		end
 	end
+	return 1
 end
 
 function fo.start_gether(bx,t)

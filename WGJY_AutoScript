@@ -6,7 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 )	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\utils\sys_utils.lua	4;"	f
 backToFirstPage()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\FindHome.lua	46;"	f
-bingxian	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	171;"	e
+bingxian	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	175;"	e
 bingxian	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	61;"	e
 bingxian	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	80;"	e
 clickHelp	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\OpenHelp.lua	19;"	f
@@ -56,7 +56,7 @@ findVipBox()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\LianMengTask.lua
 fo	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\main.lua	4;"	e
 fo	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\GetherReady.lua	3;"	e
 fo	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	86;"	e
-fo.start_gether	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	168;"	f
+fo.start_gether	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	172;"	f
 fzk	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	125;"	f
 gb	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	7;"	f
 gether_btn	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	29;"	f
@@ -71,9 +71,9 @@ hud	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ShowHUD.lua	1;"	e
 hud.hide	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ShowHUD.lua	9;"	f
 hud.show	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ShowHUD.lua	5;"	f
 id	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ShowHUD.lua	3;"	e
-index	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	173;"	e
-index	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	180;"	e
-index	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	182;"	e
+index	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	177;"	e
+index	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	184;"	e
+index	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	186;"	e
 indexs	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	150;"	e
 jk_3()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\Kuang.lua	52;"	f
 jk_4()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\Kuang.lua	63;"	f
@@ -150,7 +150,7 @@ sj()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\Kuang.lua	74;"	f
 sk_3()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\Kuang.lua	4;"	f
 sk_4()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\Kuang.lua	12;"	f
 start_ex(results)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	60;"	f
-start_gether(bx,t)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	168;"	f
+start_gether(bx,t)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	172;"	f
 str	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\utils\sys_utils.lua	14;"	e
 swip	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	13;"	f
 sys	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	7;"	e
@@ -169,6 +169,7 @@ t.move	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	40;"	f
 t.touch	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	5;"	f
 task(results)	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	12;"	f
 task_type	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	154;"	e
+task_type	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	163;"	e
 tg	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\TimeGift.lua	5;"	e
 tg.findBox	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\TimeGift.lua	8;"	f
 timeGift	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	4;"	e
@@ -188,6 +189,6 @@ touchY	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Touch.lua	43;"	e
 user_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	58;"	e
 user_time	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\Start_Ex.lua	61;"	e
 vipTask()	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\LianMengTask.lua	49;"	f
-x	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	176;"	e
+x	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	180;"	e
 zdwc	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\LianMengTask.lua	38;"	f
 zk	D:/LuaDevelop/xspworkspace/WGJY_AutoScript/xsp/src\ore\findOre.lua	18;"	f

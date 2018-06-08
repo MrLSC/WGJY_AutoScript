@@ -87,6 +87,7 @@ fo = {}
 
 function findOre(t)
 	mSleep(200)
+	
 	if t == "石" then
 		local x,y = k.sk_4()
 		if x > -1 then
@@ -121,99 +122,47 @@ function findOre(t)
 	mSleep(200)
 end
 
-function lookUp_2(bx,index,t)
+function fzk(t,bx)
+	x,y = findOre(t)
+	if x > -1 then
+		local hx,hy = k.h_bx(x-20,y-20,x+20,y+20)
+		local lx,ly = k.l_bx(x-20,y-20,x+20,y+20)
+		local sx,sy = k.s_bx(x-20,y-20,x+20,y+20)
+		
+		sysLog(hx..","..hy.."--"..lx..","..ly.."--"..sx..","..sy)
+		
+		if hx > -1 or lx > -1 or sx > -1 then
+			return 1
+		end
+		
+		ex_gether(x,y)
+		sh.show("当前剩余"..(bx - bingxian).."条兵线")
+		if bingxian >= bx then
+			return -1
+		end
+		return 0
+	end
+	return 1
+end
+
+function lookUp(bx,index,t)
 	local orientations = {"上","右","下","左","上"}
 	local indexs = { 1 , (index * 2) - 1 , index * 2, index * 2, index * 2 }
 	local width,height = getScreenSize()
+	
+	mSleep(500)
+	local task_type = fzk(t,bx)
+	if task_type ~= 1 then
+		return task_type
+	end
 	
 	for i,ori in ipairs(orientations) do
 		for tmpi=1,indexs[i] do
 			touch.move(width,orientations[i])
 			mSleep(500)
-			x,y = findOre(t)
-			if x > -1 then
-				ex_gether(x,y)
-				sh.show("当前剩余"..(bx - bingxian).."条兵线")
-				if bingxian >= bx then
-					return -1
-				end
-				return 0
-			end
+			return fzk(t,bx)
 		end
 	end
-end
-
-function lookUp(bx,index,t)
-	
-	local x,y = findOre(t)
-	if x > -1 then
-		ex_gether(x,y)
-		if bingxian >= bx then
-			return -1
-		end
-	end
-	local width,height = getScreenSize()
-	local i = index * 2
-	touch.move(width,"上")
-	mSleep(500)
-	
-	x,y = findOre(t)
-	if x > -1 then
-		ex_gether(x,y)
-		if bingxian >= bx then
-			return -1
-		end
-	end
-	
-	for tmpi=1,i-1 do
-		touch.move(height,"右")
-		mSleep(500)
-		x,y = findOre(t)
-		if x > -1 then
-			ex_gether(x,y)
-			if bingxian >= bx then
-				return -1
-			end
-		end
-	end
-	
-	for tmpi=1,i do
-		touch.move(width,"下")
-		mSleep(500)
-		x,y = findOre(t)
-		if x > -1 then
-			ex_gether(x,y)
-			if bingxian >= bx then
-				return -1
-			end
-		end
-	end
-	
-	for tmpi=1,i do
-		touch.move(height,"左")
-		mSleep(500)
-		x,y = findOre(t)
-		if x > -1 then
-			ex_gether(x,y)
-			if bingxian >= bx then
-				return -1
-			end
-		end
-	end
-	
-	for tmpi=1,i do
-		touch.move(width,"上")
-		mSleep(500)
-		x,y = findOre(t)
-		if x > -1 then
-			ex_gether(x,y)
-			if bingxian >= bx then
-				return -1
-			end
-		end
-	end
-	local bx_hud = bx - bingxian
-	sh.show("当前剩余"..bx_hud.."条兵线")
 end
 
 function fo.start_gether(bx,t)
@@ -224,7 +173,7 @@ function fo.start_gether(bx,t)
 	local index = 1
 	while (true) 
 	do
-		x = lookUp_2(bx,index,t)
+		x = lookUp(bx,index,t)
 		if x == -1 then 
 			break
 		elseif x == 0 then

@@ -78,4 +78,28 @@ function k.sj()
 	return x, y
 end
 
+--黄色兵线
+function k.h_bx(x,y,x1,y1)
+	x, y = findColor({x,y,x1,y1}, 
+		"0|0|0xf39328",
+		95, 0, 0, 0)
+	return x, y
+end
+
+--蓝色兵线
+function k.l_bx(x,y,x1,y1)
+	x, y = findColor({x, y, x1, y1}, 
+		"0|0|0x017cc5",
+		95, 0, 0, 0)
+	return x, y
+end
+
+--深蓝兵线
+function k.s_bx(x,y,x1,y1)
+	x, y = findColor({x,y,x1,y1}, 
+		"0|0|0x1136cc",
+		95, 0, 0, 0)
+	return x, y
+end
+
 return k
